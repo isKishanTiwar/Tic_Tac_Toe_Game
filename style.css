@@ -70,15 +70,28 @@ button {
     background-color: #0d033cf0;
 }
 
+.box:hover {
+    background-color: #c3bef0; 
+    border: 2px solid #fff; 
+    cursor: pointer; 
+}
+
+.box:disabled:hover {
+    background-color: #0d033cf0; /* Keep the original background color if the box is disabled */
+    border: none; /* Remove border if the box is disabled */
+    cursor: default; /* Default cursor for disabled box */
+}
+
 #reset-btn, #newGame-btn {
     padding: 1%;
     font-size: 1.25rem;
-    background-color: #24d344;
-    color: rgb(0, 0, 0);
+    background-color: #685ec1;
+    color: rgb(243, 237, 237);
     border-radius: 1rem;
     border: none;
     font-weight: bold;
     cursor: pointer;
+    margin: 2%;
 }
 
 h1 {
@@ -86,13 +99,14 @@ h1 {
 }
 
 #msg {
-    color: #424242;
+    color: #2b2929;
     font-size: 5vmin;
 }
 
-.msg-container {
+/* .msg-container {
     height: 30vmin;
-}
+    
+} */
 
 .hide {
     display: none;
