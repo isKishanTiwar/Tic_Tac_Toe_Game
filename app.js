@@ -239,3 +239,12 @@ boxes.forEach((box, index) => {
 
 newGameBtn.addEventListener("click", resetGame);
 resetBtn.addEventListener("click", resetGame);
+
+let backBtn = document.querySelector("#back-btn");
+
+backBtn.addEventListener("click", () => {
+    frontPage.classList.remove("hide");
+    gamePage.classList.add("hide");
+    resetGame(); // Reset the game when going back to back
+});
+

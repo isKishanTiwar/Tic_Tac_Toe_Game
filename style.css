@@ -4,8 +4,9 @@
     caret-color: transparent;
 }
 
+/* Body styling: background color, centering content */
 body {
-    background-color: #c3bef0;
+    background-color: #c0c8f6;
     text-align: center;
     height: 100vh;
     display: flex;
@@ -13,6 +14,7 @@ body {
     align-items: center;
 }
 
+/* Front page container*/
 .front-page {
     display: flex;
     flex-direction: column;
@@ -21,10 +23,12 @@ body {
     width: 100%;
 }
 
+/* Styling for the heading on the front page */
 .front-page h1 {
     margin-bottom: 2rem;
 }
 
+/* Mode selection section: centers buttons vertically */
 .mode-selection {
     display: flex;
     flex-direction: column;
@@ -32,16 +36,18 @@ body {
     gap: 1rem;
 }
 
+/* General button styling for mode selection and other buttons */
 button {
     padding: 1rem 2rem;
     font-size: 1.25rem;
-    background-color: #24d344;
-    color: rgb(0, 0, 0);
+    background-color: #5E35B1;
+    color: #ffffff;
     border-radius: 1rem;
     border: none;
     font-weight: bold;
 }
 
+/* Container for the game: centers the game area */
 .container {
     height: 70vh;
     display: flex;
@@ -49,6 +55,7 @@ button {
     align-items: center;
 }
 
+/* Game grid styling: sets the size and layout of the game area */
 .game {
     height: 60vmin;
     width: 60vmin;
@@ -59,6 +66,7 @@ button {
     gap: 1.5vmin;
 }
 
+/* Styling for each box in the game grid */
 .box {
     height: 18vmin;
     width: 18vmin;
@@ -66,27 +74,30 @@ button {
     border: none;
     box-shadow: 0 0 1rem rgba(23, 23, 23, 0.494);
     font-size: 8vmin;
-    color: #f13a3ac6;
-    background-color: #0d033cf0;
+    color: #FF1744;
+    background-color: #6A5ACD;
 }
 
+/* Hover effect for boxes */
 .box:hover {
-    background-color: #c3bef0; 
-    border: 2px solid #fff; 
-    cursor: pointer; 
+    background-color: #a79ff0;
+    border: 2px solid #fff;
+    cursor: pointer;
 }
 
+/* Disabled box styling: maintains original appearance */
 .box:disabled:hover {
-    background-color: #0d033cf0; /* Keep the original background color if the box is disabled */
-    border: none; /* Remove border if the box is disabled */
-    cursor: default; /* Default cursor for disabled box */
+    background-color: #0d033cf0;
+    border: none;
+    cursor: default;
 }
 
+/* Reset and new game buttons: styling for action buttons */
 #reset-btn, #newGame-btn {
-    padding: 1%;
+    padding: 2%;
     font-size: 1.25rem;
-    background-color: #685ec1;
-    color: rgb(243, 237, 237);
+    background-color: #5E35B1;
+    color: #ffffff;
     border-radius: 1rem;
     border: none;
     font-weight: bold;
@@ -94,32 +105,57 @@ button {
     margin: 2%;
 }
 
+/* General heading styling */
 h1 {
-    color: #152a38;
+    color: #3e3e6b;
 }
 
+/* Message box styling: message color and font size */
 #msg {
     color: #2b2929;
     font-size: 5vmin;
 }
 
-/* .msg-container {
-    height: 30vmin;
-    
-} */
-
+/* Hides an element */
 .hide {
     display: none;
 }
 
+/* Winning box styling: special background color for winning cells */
 .winning-box {
-    background-color: #fdb44b;
+    background-color: #FBC02D;
     color: #000;
 }
 
-#human-btn{
+/* Cursor styling for the human mode button */
+#human-btn {
     cursor: pointer;
 }
-#computer-btn{
+
+/* Cursor styling for the computer mode button */
+#computer-btn {
     cursor: pointer;
+}
+
+/* Back button positioning and styling */
+.back-btn {
+  position: absolute;
+  background-color: #5E35B1;
+  color: #ffffff;
+  padding: 10px 20px;
+  display: inline-flex;
+  font-size: 16px;
+  border-radius: 5px;
+  align-items: center;
+  border: none;
+  top: 1rem;
+  left: 1rem;
+  z-index: 10;
+  cursor: pointer;
+  gap: 8px;
+}
+
+/* Optional: Grid styling for additional spacing */
+.game-grid {
+  margin-top: 2rem;
 }
